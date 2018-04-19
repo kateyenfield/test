@@ -1,0 +1,31 @@
+Sample ID	Wendy's ID	Group	Gender	Trimester	Weeks	Processing Time	Karyotype	Condition	Tissue 	Cohort
+MX1303-C5JC4ACXX-3-TAGGAT	Rob42 V	CON	M	2	17	72	"46,XY"	"PPROM, severe oligo, ?placental abruption"	placenta	fetal
+MX1304-C5JC4ACXX-4-CCGGTG	Rob52 V	AN	F	2	21.8	24	"46,XX"	anencephaly	placenta	fetal
+MX1305-C5JC4ACXX-5-TGTTGG	Rob54 V	SB	M	2	20.4	48	"46,XY"	occipital meningomyelocele	placenta	fetal
+MX1306-C5JC4ACXX-6-GTATAG	Rob60 V	SB	F	2	23.4	48	"46,XX"	Spina bifida	placenta	fetal
+MX1307-C5JC4ACXX-7-AGCATC	Rob67 V	SB	M	2	22.4	24	"46,XY"	Spina bifida	placenta	fetal
+MX1307-C5JC4ACXX-7-CAGGCC	Rob73 V	CON	F	2	18	24	"46,XX"	"other - ROM, chorioamnionitis"	placenta	fetal
+MX1310-C5JC1ACXX-4-CTCTAC	Rob85 V	CON	F	2	23.9	192	"46,XX"	"PROM since 22+wks, IUFD N4D (stillborn)"	placenta	fetal
+MX1310-C5JC1ACXX-4-GGAACT	Rob65 V	AN	F	2	19	24	"46, XX"	anencephaly	placenta	fetal
+MX1310-C5JC1ACXX-4-GGACGG	Rob82 V	CON	M	2	19	144	"46,XY"	incompetent cervix	placenta	fetal
+MX1310-C5JC1ACXX-4-TGACAT	Rob74 V	AN	M	2	21.5	96	"46,XY"	anencephaly	placenta	fetal
+MX1355-C6RGTANXX-2-AAGCTA	RobL166 cv	CON	F	1	10.6	1	"46,XX"	#N/A	chorionic villi	fetal
+MX1355-C6RGTANXX-2-ACATCG	RobL165 cv	CON	F	1	7.1	2	"46,XX"	#N/A	chorionic villi	fetal
+MX1355-C6RGTANXX-2-CAAGTT	RobL167 cv	CON	F	1	6.5	1.5	"46,XX"	#N/A	chorionic villi	fetal
+MX1355-C6RGTANXX-2-CATTCA	Rob36 cv	CON	F	2	15	168	"46,XX"	#N/A	chorionic villi	fetal
+MX1355-C6RGTANXX-2-GGAACT	Rob41 cv	CON	F	2	15.5	168	"46,XX"	#N/A	chorionic villi	fetal
+MX1356-C6RGTANXX-3-ATGGCA	RobM92 cv	CON	M	3	40.1	48	"46,XY"	#N/A	chorionic villi	fetal
+MX1356-C6RGTANXX-3-CCTTGC	RobL149 cv	CON	F	2	18.5	120	"46,XX"	#N/A	chorionic villi	fetal
+MX1356-C6RGTANXX-3-CGGCCT	RobL170 cv	CON	M	1	9.6	1.33	"46,XY,del(20q)?"	#N/A	chorionic villi	fetal
+MX1356-C6RGTANXX-3-GCGTGG	Rob91 cv	CON	F	2	14	72	"46,XX"	SROM	chorionic villi	fetal
+MX1356-C6RGTANXX-3-GCTGTA	RobM84 cv	CON	F	3	40.3	48	"46,XX"	#N/A	chorionic villi	fetal
+MX1356-C6RGTANXX-3-GTATAG	RobL148 cv	CON	F	2	18.7	24	"46,XX"	#N/A	chorionic villi	fetal
+MX1356-C6RGTANXX-3-TAGTTG	RobL171 cv	CON	M	1	9.6	2	"46,XY"	#N/A	chorionic villi	fetal
+MX1356-C6RGTANXX-3-TGACAT	RobM114 cv	CON	M	3	38.6	72	"46,XY"	#N/A	chorionic villi	fetal
+MX1357-C6RGTANXX-4-AATTAT	RobM120 cv	CON	F	3	38	24	"46,XX"	#N/A	chorionic villi	fetal
+MX1357-C6RGTANXX-4-AGTCTT	RobM167 cv	CON	F	3	39.7	1.66	"46,XX"	#N/A	chorionic villi	fetal
+MX1357-C6RGTANXX-4-CATGGG	RobM181 cv	CON	M	3	39	15.5	"46,XY"	#N/A	chorionic villi	fetal
+MX1357-C6RGTANXX-4-GCCTAA	RobM135 cv	CON	M	3	39.9	24	"46,XY"	#N/A	chorionic villi	fetal
+MX1357-C6RGTANXX-4-GTAGCC	RobM153 cv	CON	M	3	38.7	1	"46,XY"	#N/A	chorionic villi	fetal
+MX1357-C6RGTANXX-4-TATCGT	RobM112 cv	CON	F	3	38.9	48	"46,XX"	#N/A	chorionic villi	fetal
+MX1357-C6RGTANXX-4-TCTGAG	Rob N4 cv	CON	M	2	21.6	96	"46,XY"	"control, bilateral echogenic kidneys"	chorionic villi	fetal

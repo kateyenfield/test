@@ -1,0 +1,121 @@
+---
+title: "Small non-coding RNA transcriptome of human placenta"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+#options(download.file.method = "curl")
+#install.packages("tibble")
+library(tibble)
+library(readr)
+library(knitr)
+#install.packages("RColorBrewer")
+library(RColorBrewer)
+library(cluster)
+#install.packages("tidyverse")
+library(tidyverse)
+library(pvclust)
+library(xtable)
+library(cluster)
+#source("https://bioconductor.org/biocLite.R")
+#biocLite("GEOquery", "biomaRt")
+#library(GEOquery)
+#library(biomaRt)
+#install.packages("data.table")
+library(data.table)
+#install.packages("reshape2")
+library(reshape2)
+library(limma)
+library(plyr)
+library(lattice)
+library(RCurl)
+library(knitr)
+library(pheatmap)
+library(reshape2)
+library(reshape)
+library(edgeR)
+library(dplyr)
+
+
+```
+
+## Links to data
+
+[miRMaster Analysis](https://ccb-compute.cs.uni-saarland.de/mirmaster/results/run_zw4cek2x)
+
+
+```{r}
+# read expression data (known miRNAs)
+known.miRNA.expression <- read.delim("RPM_expression_known_mirnas.txt")
+placenta.metadata <- read.csv("Clinical_30_placenta.csv")
+placenta.metadata <- placenta.metadata %>% as_tibble()
+#known.miRNA.expression
+# melt into a format ggplot can easily work with
+known.miRNA.expression <- as.data.frame(known.miRNA.expression)
+melted.expression.matrix <- known.miRNA.expression %>% melt(id = "sample")
+#melted.expression.matrix
+
+# re-order columns
+melted.expression.matrix.new <- melted.expression.matrix[c(2,1,3)]
+colnames(melted.expression.matrix.new)[1] <- "sample"
+colnames(melted.expression.matrix.new)[2] <- "miRNA"
+# melted.expression.matrix.new$value <- melted.expression.matrix.new$value %>% as.numeric()
+
+#combine expression with sample metadata (age added)
+full.data.known.mirnas <- left_join(melted.expression.matrix.new, placenta.metadata, by = "sample")
+# full.data.known.mirnas
+colnames(full.data.known.mirnas)[3] <- "RPM_exp_miRNA"
+#full.data.known.mirnas
+full.data.known.mirnas$RPM_exp_miRNA <- full.data.known.mirnas$RPM_exp_miRNA %>% as.numeric()
+# log2 transform
+#full.data.known.mirnas$RPM_exp_miRNA <- log2(full.data.known.mirnas$RPM_exp_miRNA +1)
+full.data.known.mirnas.log2 <- full.data.known.mirnas
+full.data.known.mirnas.log2[,3] <- log(full.data.known.mirnas.log2[,3],2)
+#full.data.known.mirnas.log2
+```  
+
+```{r}
+# density plot
+full.data.known.mirnas.log2 %>% ggplot(aes(x = RPM_exp_miRNA, color = sample)) +
+geom_density() +
+theme(legend.position="none")
+```
+
+```{r}
+# box plot all samples
+bp1 <- full.data.known.mirnas.log2 %>% ggplot(aes(y = RPM_exp_miRNA, x = sample)) +
+        geom_boxplot()
+bp1 + theme(axis.text.x = element_text(angle = 60, hjust = 1))
+```
+
+
+```{r}
+# violin plot
+vp1 <- ggplot(full.data.known.mirnas.log2, aes(sample, RPM_exp_miRNA)) + 
+   geom_violin()
+vp1 + theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+# violin plot per gender
+vp2 <- ggplot(full.data.known.mirnas.log2, aes(sample, RPM_exp_miRNA)) + 
+   geom_violin() +
+  facet_wrap(~ Gender)
+vp2 + theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+```
+
+
+
+Multidimensional scaling plots
+```{r}
+
+known.miRNA.expression <- known.miRNA.expression %>% as_tibble()
+known.miRNA.expression
+myCPM <- known.miRNA.expression
+thresh <- myCPM > 0.5
+head(thresh)
+
+```
+

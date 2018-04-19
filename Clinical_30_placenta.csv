@@ -1,0 +1,31 @@
+sample,Group,Gender,Trimester,Weeks,Processing Time,Karyotype,Condition,Tissue 
+MX1303_C5JC4ACXX_3_TAGGAT,CON,M,2,17,72,"46,XY","PPROM, severe oligo, ?placental abruption",placenta
+MX1304_C5JC4ACXX_4_CCGGTG,AN,F,2,21.8,24,"46,XX",anencephaly,placenta
+MX1305_C5JC4ACXX_5_TGTTGG,SB,M,2,20.4,48,"46,XY",occipital meningomyelocele,placenta
+MX1306_C5JC4ACXX_6_GTATAG,SB,F,2,23.4,48,"46,XX",Spina bifida,placenta
+MX1307_C5JC4ACXX_7_AGCATC,SB,M,2,22.4,24,"46,XY",Spina bifida,placenta
+MX1307_C5JC4ACXX_7_CAGGCC,CON,F,2,18,24,"46,XX","other - ROM, chorioamnionitis",placenta
+MX1310_C5JC1ACXX_4_CTCTAC,CON,F,2,23.9,192,"46,XX","PROM since 22+wks, IUFD N4D (stillborn)",placenta
+MX1310_C5JC1ACXX_4_GGAACT,AN,F,2,19,24,"46,XX",anencephaly,placenta
+MX1310_C5JC1ACXX_4_GGACGG,CON,M,2,19,144,"46,XY",incompetent cervix,placenta
+MX1310_C5JC1ACXX_4_TGACAT,AN,M,2,21.5,96,"46,XY",anencephaly,placenta
+MX1355_C6RGTANXX_2_AAGCTA,CON,F,1,10.6,1,"46,XX",#N/A,chorionic villi
+MX1355_C6RGTANXX_2_ACATCG,CON,F,1,7.1,2,"46,XX",#N/A,chorionic villi
+MX1355_C6RGTANXX_2_CAAGTT,CON,F,1,6.5,1.5,"46,XX",#N/A,chorionic villi
+MX1355_C6RGTANXX_2_CATTCA,CON,F,2,15,168,"46,XX",#N/A,chorionic villi
+MX1355_C6RGTANXX_2_GGAACT,CON,F,2,15.5,168,"46,XX",#N/A,chorionic villi
+MX1356_C6RGTANXX_3_ATGGCA,CON,M,3,40.1,48,"46,XY",#N/A,chorionic villi
+MX1356_C6RGTANXX_3_CCTTGC,CON,F,2,18.5,120,"46,XX",#N/A,chorionic villi
+MX1356_C6RGTANXX_3_CGGCCT,CON,M,1,9.6,1.33,"46,XY",#N/A,chorionic villi
+MX1356_C6RGTANXX_3_GCGTGG,CON,F,2,14,72,"46,XX",SROM,chorionic villi
+MX1356_C6RGTANXX_3_GCTGTA,CON,F,3,40.3,48,"46,XX",#N/A,chorionic villi
+MX1356_C6RGTANXX_3_GTATAG,CON,F,2,18.7,24,"46,XX",#N/A,chorionic villi
+MX1356_C6RGTANXX_3_TAGTTG,CON,M,1,9.6,2,"46,XY",#N/A,chorionic villi
+MX1356_C6RGTANXX_3_TGACAT,CON,M,3,38.6,72,"46,XY",#N/A,chorionic villi
+MX1357_C6RGTANXX_4_AATTAT,CON,F,3,38,24,"46,XX",#N/A,chorionic villi
+MX1357_C6RGTANXX_4_AGTCTT,CON,F,3,39.7,1.66,"46,XX",#N/A,chorionic villi
+MX1357_C6RGTANXX_4_CATGGG,CON,M,3,39,15.5,"46,XY",#N/A,chorionic villi
+MX1357_C6RGTANXX_4_GCCTAA,CON,M,3,39.9,24,"46,XY",#N/A,chorionic villi
+MX1357_C6RGTANXX_4_GTAGCC,CON,M,3,38.7,1,"46,XY",#N/A,chorionic villi
+MX1357_C6RGTANXX_4_TATCGT,CON,F,3,38.9,48,"46,XX",#N/A,chorionic villi
+MX1357_C6RGTANXX_4_TCTGAG,CON,M,2,21.6,96,"46,XY","control, bilateral echogenic kidneys",chorionic villi

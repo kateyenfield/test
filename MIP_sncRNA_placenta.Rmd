@@ -88,7 +88,7 @@ theme(legend.position="none")
 # box plot all samples
 bp1 <- full.data.known.mirnas.log2 %>% ggplot(aes(y = RPM_exp_miRNA, x = sample)) +
         geom_boxplot()
-bp1 + theme(axis.text.x = element_text(angle = 60, hjust = 1))
+bp1 + theme(axis.text.x = element_text(angle = 70, hjust = 1))
 ```
 
 
